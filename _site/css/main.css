@@ -1,0 +1,265 @@
+
+/* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 30px;
+}
+h1 {
+  font-size: 7vw;
+  margin-top: 0;
+}
+h2 {
+  font-size: 2em;
+}
+p {
+  line-height: 1.5;
+  margin: 0.75em 0;
+}
+a {
+  color: #6397b5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-container {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 20;
+  height: 10vh;
+}
+
+.header-nav {
+  float: right;
+  padding: 5.5vh 1vh 0 0;
+  flex-grow: 1;
+}
+
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ed6e2f;
+}
+
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #fff;
+}
+
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
+}
+
+.header-logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;  
+  background-color: #000;  
+  text-decoration: none;    
+}
+
+/* HERO STYLES */
+
+.hero-content {
+  color: #E0A325;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+  top: 50%;
+  transform: translate(0, -50%); 
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+
+}
+.hero-content h1 {
+  color: #bda955;
+  font-size: 7vw;
+  margin-bottom: 0.25em 0.25em;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.full-hero {
+  background-color: #c7dbfc;
+  background-size: cover;  
+  height: 80vh;
+  
+}
+
+.hero-home {  
+  background-position: center;
+  background-image: url(/images/man.jpg);
+}
+
+
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center; 
+}
+
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
+  
+}
+
+/* COLUMN STYLES */
+
+.col-three {
+  display: flex;
+  flex: 1;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em
+}
+
+
+
+/* SOCIAL STYLES */
+.social-link {
+  background: rgba(150, 150, 150, 0.5);
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2.5em;
+  line-height: 1;
+  padding-top: 0.85em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 2.5em;
+}
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+/* HOMEPAGE STYLES */
+.home-section {
+  margin: 4rem auto;
+  max-width: 980px;
+  width: 90vw;
+}
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.home-callout {
+  background-color: #000;
+  color: #fff;
+  padding: 7vh 0;
+  align-items: center;
+  display: flex;
+}
+.callout-title {
+  /*flex-grow: 1;*/
+  font-size: 5.75vw;
+  text-align: right;  
+}
+.callout-copy {
+  font-size: 1rem;
+  margin: 3rem 3rem;
+  flex-shrink: 0;
+  flex-basis: 60em;
+}
+
+/* SIGN UP FORM */
+
+.email-octopus-form-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.email-octopus-form-row {
+  padding: 10px;  
+}
+
+input {
+  width: 50%;
+  height: 4vh;
+  padding: 5px 20px;
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.email-octopus-form-row-subscribe button{
+  border: 2px solid black;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+h2 ~ p {
+  font-size: 1em;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+  font-style: italic;
+}
