@@ -27,11 +27,10 @@ img {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column; /* stretch the elements vertically */
   min-height: 100vh;
-  padding-top: 2vh;
 }
 .content-container {
   display: flex;
@@ -76,20 +75,24 @@ body {
 
 /* HEADER STYLES */
 .header {
-  color: #000;
+  background-color: #000;
+  color: #fff;
   max-width: 100%;
   z-index: 20;
   height: 10vh;
+  width: 100%;
+  position: absolute;
 }
 
 .header-logo-text {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes', cursive; 
   font-size: 1.5em;
   padding: 0 0 0 5.5vh;  
 }
 
 .header-logo-text a {
   text-decoration: none;
+  color: #fff;  
 }
 
 .header-nav {
@@ -111,18 +114,11 @@ body {
 
 .nav-links a {
   font-size: 1rem;
-  font-weight: bold;
   text-decoration: none;
+  color: #fff;
 }
 
-.nav-links a:hover,
-.nav-links a:active {
-  color: #ed6e2f;
-}
 
-.header-nav > li:first-child a {
-  color: #ed6e2f;
-}
 .header-nav > li:first-child a:hover {
   color: #fff;
 }
@@ -135,7 +131,7 @@ body {
 /* HERO STYLES */
 
 .hero-content {
-  color: #000;
+  color: #fff;
   position: relative;
   text-align: center;
   padding: 40px;
@@ -143,23 +139,26 @@ body {
   transform: translate(0, -60%); 
 }
 .hero-content h1 {
-  color: #000;
+  color: #fff;
   font-size: 7vw;
   margin-bottom: 0.25em 0.25em;
+  font-style: extra-bold;
 }
-
+.hero-content p {
+  font-size: 2vw;
+}
 
 .full-hero {
-  background-color: #c7dbfc;
+  position: relative;
   background-size: cover;  
-  height: 40vh;
+  height: 100vh;
+  width: 100vw;
   box-sizing: border-box;
-  padding-top: 10vh;  
-}
-
-.hero-home {  
-  background-position: center;
-  background-image: url(/images/flag.jpg);
+  z-index: 1;
+  background-position: center center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+    url(/images/fab-night.jpg);
 }
 
 /* HOMEPAGE STYLES */
@@ -170,7 +169,7 @@ body {
 }
 
 .home-section {
-  margin: 4rem auto;  
+  margin: 5rem auto;  
 }
 .home-section h2 {
   margin-bottom: 1.5rem;
@@ -241,10 +240,10 @@ body {
 
 .footer-nav li {
   display: inline-block;
-  margin: 1em 1em 0;
+  margin: 0.5em 1em 0;
 }
 .footer-nav a {
-  padding-top: 0.5em;
+  /*padding-top: 0.5em;*/
   color: #ccc;
   
 }
@@ -320,7 +319,7 @@ body {
 
 /* This is repeated CSS style from above, to override the imported Email Octopus file */
 .email-octopus-form-row-subscribe button{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 100%;
     color: #fff; 
     padding: .5em 1em;
