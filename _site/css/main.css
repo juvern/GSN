@@ -101,7 +101,7 @@ body {
 
 .header-nav ul {
   list-style: none;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
 }
 
@@ -119,6 +119,7 @@ body {
 .show-mobile-menu, .mobile-menu-check {
   display: none;
 }
+
 
 
 /*.header-nav > li ~ li {
@@ -252,11 +253,8 @@ body {
 }
 
 /* PRODUCT PAGE STYLES */
-
 .product-top-section {
-  display: block;
-  flex: 0;
-  margin: 15vh 0 0 0;
+  padding: 15vh 0 0 0;
   text-align: center;
 }
 
@@ -425,7 +423,7 @@ FOOTER
 /*PRODUCT SYTLES*/
 .col-two {
   flex-direction: column;
-  padding: 15vh 5vh;
+  padding: 15vh;
 }
 .col {
   padding: 1em;
