@@ -265,10 +265,11 @@ body {
   text-align: center;
 }
 .col-two .col-product-1 {
-  background-color: #ffa700;
+  background-color: #cc0000;
+  color: #fff;
 }
 .col-two .col-product-2 {
-  background-color: #2fff00;
+  background-color: #eeba30;
 }
 
 .circular-button {
