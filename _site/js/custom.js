@@ -10,4 +10,6 @@ $(document).ready(function() {
         // template: '<div class="col insta"><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"/></a></div>',
     });
     feed.run();
+
+
 });

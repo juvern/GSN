@@ -23,7 +23,7 @@ h2 ~ p {
 }
 
 img {
-  padding: 2em;
+  padding: 1em;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 
 /* PRIDE COLOURS */
 .rainbow-colour-1 {
-  background-color: #20a3e3;
+  background-color: #cc0000;
 }
 
 .rainbow-colour-2 {
@@ -64,13 +64,6 @@ body {
 
 .rainbow-colour-3 {
   background-color: #49ff00;
-}
-
-.rainbow-colour-4 {
-  background-color: #6a1ce5;
-}
-.rainbow-colour-5 {
-  background-color: #b4d7ff;
 }
 
 /* HEADER STYLES */
@@ -86,7 +79,7 @@ body {
 
 .header-logo-text {
   font-family: 'Great Vibes', cursive; 
-  font-size: 1.5em;
+  font-size: 5vh;
   padding: 0 0 0 5.5vh;  
 }
 
@@ -97,7 +90,7 @@ body {
 
 .header-nav {
   display: flex;
-  padding: 2.5vh 5.5vh 0 0;
+  padding: 2.5vh 2vh 0 0;
   justify-content: space-between;
 }
 
@@ -113,7 +106,7 @@ body {
 }
 
 .nav-links a {
-  font-size: 1rem;
+  font-size: 4vh;
   text-decoration: none;
   color: #fff;
 }
@@ -122,6 +115,12 @@ body {
 .header-nav > li:first-child a:hover {
   color: #fff;
 }
+
+.show-mobile-menu, .mobile-menu-check {
+  display: none;
+}
+
+
 
 /*.header-nav > li ~ li {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -189,26 +188,24 @@ body {
   padding: 0 3vw;
 }
 .home-mailing {
-  color: #000;
+  color: #fff;
   padding: 7vh 0.5vh;
   align-items: center;
 }
 .home-tagline {
-  color: #000;
+  color: #fff;
   padding: 7vh 2vh;
   align-items: center;
 }  
-}
 
 
-@media (max-width: 800px) {
-  .home-callout {
-    flex-direction: column;
-  }
-  .callout-copy {
-    flex: 1;
-  }
+/*CONTACT*/
+.contact {
+  padding-top: 15vh;
+  margin: 0 auto;
+  height: 100%;
 }
+
 
 /* ABOUT */
 .about-section img {
@@ -219,9 +216,9 @@ body {
 
 /* FOOTER STYLES */
 .footer {
-  background-color: #000;
   padding: 2vh 0 2vh;
   text-align: center; 
+  background-color: #000;
 }
 
 .footer-logo img {
@@ -243,9 +240,7 @@ body {
   margin: 0.5em 1em 0;
 }
 .footer-nav a {
-  /*padding-top: 0.5em;*/
   color: #ccc;
-  
 }
 
 .footer-social li {
@@ -258,7 +253,6 @@ body {
 }
 
 /* PRODUCT PAGE STYLES */
-
 .col-two {
   display: flex;
   flex: 1;
@@ -287,10 +281,9 @@ body {
 }
 
 
-
 /* INSTAGRAM FEED */
 .insta img {
-  margin-bottom:30px;
+  margin-bottom:10px;
 }
 .insta img:hover {
   opacity:0.8;
@@ -299,7 +292,6 @@ body {
 }
 
 /* SIGN UP FORM */
-
 .email-octopus-form-wrapper {
   display: inline-block;
   width: 100%;
@@ -329,9 +321,10 @@ body {
     border-radius: 2px;
 }
 
+/*--------------- MOBILE RESPONSIVE --------------------*/
+
 @media (max-width: 800px) {
   
-
   html {
     box-shadow: none;
     padding: 0;
@@ -343,25 +336,96 @@ body {
   }
 
  /*HOME*/
- .callout-copy {
-  padding: 0.1em;
-} 
-
-  /*FOOTER*/
-  .footer-social img {
-    height: 30px;   
-    margin: 0.1em 0.2em 0;
-  }
-
-
-  /*PRODUCT SYTLES*/
-  .col-two {
-    flex-direction: column;
-    padding: 1em;
-  }
-  .col {
-    padding: 1em;
-  }
-
+.callout-copy {
+padding: 0.1em;
 }
+
+.home-callout {
+  flex-direction: column;
+}
+.callout-copy {
+  flex: 1;
+}
+
+/*HEADER*/
+.header-logo-text {
+  font-family: 'Great Vibes', cursive; 
+  font-size: 5vh;
+  padding: 0 0 0 5.5vh;  
+}
+
+.show-mobile-menu {
+  display: block;
+  float: right;
+  margin-right: 1.5vh;
+  font-size: 4vh;
+  position: relative;
+}
+
+.nav-links {
+  background-color: #444;
+  box-sizing: border-box;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 10vh 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  width: 100vw;
+  z-index: 9;
+}
+
+.nav-links li {
+  display: block;
+  margin-top: 1em;
+}
+
+.nav-links li ~ li {
+  border: 0;
+  padding: 0;
+}
+.header-nav li:last-child {
+  margin-bottom: 1em;
+}
+
+
+.mobile-menu-check:checked ~ .nav-links {
+  max-height: 1000px;
+  margin-top: 7vh;
+  /*overflow: hidden;*/
+}
+
+.mobile-menu-check:checked ~ .show-mobile-menu:after {
+  background-color: #000;
+  color: #ed6e2f;
+  left: 0;
+  position: absolute;
+  top: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+
+FOOTER
+.footer-social img {
+  height: 30px;   
+  margin: 0.1em 0.2em 0;
+}
+
+
+
+/*PRODUCT SYTLES*/
+.col-two {
+  flex-direction: column;
+  padding: 15vh;
+}
+.col {
+  padding: 1em;
+}
+
+
+
+
 

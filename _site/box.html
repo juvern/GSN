@@ -11,45 +11,63 @@
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:regular,semi-bold,extra-bold&effect=wallpaper" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/instafeed.min.js"></script>
-	<script type="text/javascript" src="/js/custom.js"></script>	
+	<script type="text/javascript" src="/js/custom.js"></script>
+	<script src="https://js.stripe.com/v3/"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<!-- Snipcart -->
+	<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YzY1YTUyYWEtYWZmOS00OGI4LTkxN2ItNzE3MTAzYjNhNjYzNjM2NDY2ODQwMDYwMDkxOTcx"></script>
+	<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109494504-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109494504-1');
+	</script>
+	
 </head>
 
 <body>
 <header class="header">
   <nav class="header-nav">
-  	<ul class = "header-logo-text">
+  	<ul class= "header-logo-text">
   		<li><a href="/">Gay Spa Night</a></li>
   	</ul>
-
+	  	<input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+	    <label for="mobile-menu" class="show-mobile-menu">&#9776;</label>
     <ul class="nav-links">
-	<li><a href="/about.html">About</a></li>
+		<li><a href="/about.html">About</a></li>
 <!-- <li><a href="/box.html">The Box</a></li> -->
 <li><a href="/contact.html">Contact</a></li>
+
     </ul>	
 
   </nav>
 
-</header>  
+</header>
+  
 
 <div class="content-container">
-  	<div class="col-two">
-	  <div class="col col-product-1">
-	    <h2>Basic</h2>
-	    <img src="/images/icons8-gift.png">
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula tellus, scelerisque ac aliquet at, pharetra pellentesque sapien. Integer tristique dignissim lorem non fringilla.</p>
-	    <button class="circular-button">£12</button>
-	    <p>Free shipping in the UK</p>
-	    <button class="button">Buy Now</button>	  
-	  </div>
-	  <div class="col col-product-2">
-	    <h2>Premium</h2>
-		<img src="/images/icons8-champagne.png">
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula tellus, scelerisque ac aliquet at, pharetra pellentesque sapien. Integer tristique dignissim lorem non fringilla.</p>
-	    <button class="circular-button">£25</button>
-	    <p>Free shipping in the UK</p>
-	    <button class="button">Buy Now</button>	    
-	  </div>
-	 </div>
+  <div class="col-two">
+  <div class="col col-product-1">
+    <h2>Gaymergency</h2>
+    <img src="/images/icons8-gift.png">
+    <p>You have a date night tonight and you need something right now </p>
+    <button class="circular-button">£15</button>
+    <p>Free delivery in the UK</p>
+    <button class="button">Buy Now</button>	  
+  </div>
+  <div class="col col-product-2">
+    <h2>Pamper Pack</h2>
+	<img src="/images/icons8-champagne.png">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula tellus, scelerisque ac aliquet at, pharetra pellentesque sapien. Integer tristique dignissim lorem non fringilla.</p>
+    <button class="circular-button">£25</button>
+    <p>Free delivery in the UK</p>
+    <button class="button">Buy Now</button>	    
+  </div>
+ </div>
 
 
 </div>
@@ -60,15 +78,9 @@
   </a>
   <h3>Gay Spa Night</h3>
 <h4>Copyright 2017</h4>
+
     <nav>
-    <ul class="footer-nav nav-links">
-	<li><a href="/about.html">About</a></li>
-<!-- <li><a href="/box.html">The Box</a></li> -->
-<li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
-    <nav>
-    <ul class="footer-social nav-links">
+    <ul class="footer-social">
   		<li><a href="http://www.twitter.com/gayspanight"><img src="/images/twitter.png" alt="Twitter"></a></li>
   		<li><a href="http://www.instagram.com/gayspanight"><img src="/images/instagram.png" alt="Instagram"></a></li>
   		<li><a href="http://www.facebook.com/gayspanight"><img src="/images/fb.png" alt= "Facebook"></a></li>		

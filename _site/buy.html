@@ -51,22 +51,42 @@
 
 <div class="content-container">
   <div class="home-section">
-	<div class="about-section">
-		<h2>Tired?</h2>
-		<img src="/images/20171001_153931.gif">
-		<p>You've just got back home, tired after a long day at work.</p>
-		<img src="/images/bored.JPG">
-		<p>Now both of you are just on your phones, where's the romance in that?!</p>
-		<h2>We bring you...Gay Spa Night</h2>
-		<img src="/images/surprise-box.JPG">
-		<p>... a collection of awesome people, fun ideas and yummy drinks for fab evenings in.</p>
-		<p>We know how punishing the workweek can be. So we decided to share our tried and tested fabulous routine that helps us shake off the work blues without faff of having to stay out late.</p>
-		<h2>You're welcome</h2>
-		<img src="/images/sunglasses.gif">	
-	</div>
-</div>		
+  <form action="/charge" method="post" id="payment-form">
+    <div class="form-row">
+      <label for="card-element">
+        Credit or debit card
+      </label>
+      <div id="card-element">
+        <!-- a Stripe Element will be inserted here. -->
+      </div>
 
+      <!-- Used to display Element errors -->
+      <div id="card-errors" role="alert"></div>
+    </div>
 
+    <button>Submit Payment</button>
+  </form>
+
+</div>
+
+<script type="text/javascript">
+    var stripe = Stripe('pk_test_0enkPvP7x4Cmh6AIrS4yaOdI');
+    var elements = stripe.elements();
+    // Custom styling can be passed to options when creating an Element.
+    var style = {
+      base: {
+        // Add your base input styles here. For example:
+        fontSize: '16px',
+        color: "#32325d",
+      }
+    };
+
+// Create an instance of the card Element
+var card = elements.create('card', {style: style});
+
+// Add an instance of the card Element into the `card-element` <div>
+card.mount('#card-element');
+</script>
 </div>
 
 <footer class="footer">
