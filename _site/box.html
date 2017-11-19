@@ -56,7 +56,7 @@
 	    <label for="mobile-menu" class="show-mobile-menu">&#9776;</label>
     <ul class="nav-links">
 		<li><a href="/about.html">About</a></li>
-<li><a href="/box.html">The Box</a></li>
+<li><a href="/box.html">Box</a></li>
 <!-- <li><a href="/contact.html">Contact</a></li> -->
 
     </ul>	
@@ -66,15 +66,30 @@
 </header>
   
 
-<div class="content-container">
-  <div class="col-two">
+
+  <script>
+  fbq('track', 'InitiateCheckout');
+</script>
+
+<div class="product-top-section">
+    <h2>We bring you...</h2>
+    <h2>Gay Spa Night</h2>
+    <img src="/images/surprise-box.JPG">
+    <p>... a collection of awesome people, fun ideas and yummy drinks for fab evenings in.</p>
+    <p>We know how punishing the workweek can be. So we decided to share our tried and tested fabulous routine that helps us shake off the work blues without the faff of having to stay out late.</p>
+</div>
+
+<div class="col-two">
   <div class="col col-product-1">
     <h2>Date Night</h2>
-    <img src="/images/icons8-gift.png">
-    <p>Face masks, luxurious chocolate treats, a fun game and candle to set the mood - it’s going to be fabulous!</p>
-    <button class="circular-button">£15</button>
+    <img src="/images/DSC_0507.JPG">
+    <p>Face masks for two</p>
+    <p>Chocolate treats</p>
+    <p>A fun game</p>
+    <p>A candle to set the mood</p>
+    <button class="circular-button">£18</button>
     <p>Free delivery in the UK</p>
-    <button class="button snipcart-add-item"
+    <button onClick="fbq('track', 'InitiateCheckout');" class="button snipcart-add-item"
             data-item-id="1"
             data-item-name="Date Night"
             data-item-price="18.00"
@@ -84,11 +99,13 @@
   </div>
   <div class="col col-product-2">
     <h2>Bubbly Date Night</h2>
-	<img src="/images/icons8-champagne.png">
-    <p>All the fabulous items from our "Date Night" plus a bottle of processo - it's going to be an amazing evening!</p>
-    <button class="circular-button">£25</button>
+	<img src="/images/DSC_0502.JPG">
+    <p>All the fabulous items from our "Date Night" box</p>
+    <p>... plus a bottle of processo</p>
+    <p>It's going to be an amazing evening!</p>
+    <button class="circular-button">£28</button>
     <p>Free delivery in the UK</p>
-      <button class="button snipcart-add-item"
+      <button onClick="fbq('track', 'InitiateCheckout');" class="button snipcart-add-item"
             data-item-id="2"
             data-item-name="Bubbly Date Night"
             data-item-price="28.00"
