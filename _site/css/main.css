@@ -328,7 +328,7 @@ body {
 
 /*--------------- MOBILE RESPONSIVE --------------------*/
 
-@media (max-width: 800px) {
+@media (max-width: 800px)  {
   
   html {
     box-shadow: none;
@@ -413,23 +413,26 @@ padding: 0.1em;
 }
 
 
-FOOTER
+/*FOOTER*/
 .footer-social img {
   height: 30px;   
   margin: 0.1em 0.2em 0;
 }
 
-
-
 /*PRODUCT SYTLES*/
+
+.product-top-section img {
+  max-width: 80vw;
+}
+
 .col-two {
   flex-direction: column;
-  padding: 15vh;
+  padding: 5vh;
 }
 .col {
   padding: 1em;
 }
-
+/*--------------- END MOBILE RESPONSIVE --------------------*/
 
 
 
