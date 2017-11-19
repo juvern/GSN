@@ -253,6 +253,11 @@ body {
 }
 
 /* PRODUCT PAGE STYLES */
+.product-top-section {
+  padding: 15vh 0 0 0;
+  text-align: center;
+}
+
 
 .product-top-section img{
   display: block;
@@ -263,7 +268,6 @@ body {
 .col-two {
   display: flex;
   flex: 1;
-  padding: 10vh;
 }
 .col {
   flex: 1 0 15em;
